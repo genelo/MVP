@@ -1,0 +1,269 @@
+color {
+color :#CAD2C5;
+color :#84A98C;
+color :#52796F;
+color :#354F52;
+color :#2F3E46;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #CAD2C5;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #CAD2C5;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #CAD2C5;
+}
+
+button {
+  background-color: #CAD2C5;
+  color: #2F3E46;
+  border-radius: 5px;
+  border: 1px #354F52 solid;
+}
+
+button:active {
+  transform: scale(.95);
+  transition: .1s ease-in-out;
+}
+
+body {
+  background-color: #354F52;
+}
+
+/* HEADERS */
+#logo {
+  color: #CAD2C5;
+  font-size: 10vh;
+  margin: auto;
+}
+
+#headerButtons {
+  position: absolute;
+  right: 10px;
+  top:10px;
+}
+
+button.header {
+  margin: 5px;
+}
+
+#header {
+  background-color: #52796F;
+  font-size: 40px;
+  color:#CAD2C5;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* MAIN BODY */
+.mainContainer {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+}
+
+/* GROUP DISPLAY  */
+#editGroupNameButton{
+  color:#2F3E46;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#editGroupNameButton:hover{
+  transform: scale(1.2);
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+#editGroupNameButton:active{
+  transform: scale(.9);
+  transition: .3s;
+}
+
+.groupList::-webkit-scrollbar {
+  display: none;
+}
+
+#groupDisplayNameContainer{
+  display: flex;
+  flex-direction: row;
+  margin-left:10px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.groupDisplayName {
+  background-color: #52796F;
+  border: #354F52;
+  color: #CAD2C5;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 40vw;
+  margin-top: 10px;
+}
+
+.groupDisplayName:focus{
+  outline: none;
+}
+
+.groupDisplay {
+  background-color: #52796F;
+  color:#CAD2C5;
+  margin-top: 2vh;
+  border-radius: 4px;
+  min-height: 33vh;
+  max-height: 33vh;
+}
+
+#groupDisplayList {
+  margin-top: 1vh;
+  background-color: #84A98C;
+  max-height: 25vh;
+  min-height: 25vh;
+  border-radius: 3px;
+}
+
+#groupList{
+  height : 22vh;
+  overflow-x: hidden;
+}
+
+#addParticipant {
+  border-bottom: #354F52 1px solid;
+  padding-bottom: 8px;
+}
+
+#addParticipantInput{
+  border-radius: 3px;
+  background-color: white;
+  color:#354F52;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#addParticipantButton {
+  color:#2F3E46
+}
+
+#addParticipantButton:hover{
+  transform: scale(1.2);
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+#addParticipantButton:active{
+  transform: scale(.9);
+  transition: .3s;
+}
+
+.participant {
+  position: flex;
+  flex-direction: row;
+  border-bottom: #2F3E46 1px solid;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color:#2F3E46;
+  padding-left: 5px;
+  border-radius: 3px;
+}
+
+.deleteParticipantButton{
+  max-width: 12px;
+}
+
+.deleteParticipantButton:hover{
+  transform: scale(1.2);
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.deleteParticipantButton:active{
+  transform: scale(.9);
+  transition: .3s;
+}
+
+#groupDisplayGroupListing {
+  background-color: #2F3E46;
+}
+
+/* GROUP OR SELECT */
+
+.groupOrSelect {
+  background-color: #52796F;
+  color:#CAD2C5;
+  margin-top: 2vh;
+  border-radius: 4px;
+  min-height: 15vh;
+  max-height: 15vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#groupBy {
+  border-radius: 3px;
+  background-color: #2F3E46;
+  margin-top: 2vh;
+  min-height: 10vh;
+  max-height: 10vh;
+  margin-right:1vh;
+  flex-grow:1;
+  color:#CAD2C5;
+  text-align: center;
+}
+
+#groupByText {
+  margin-top: 2vh;
+}
+
+#selectRandomText {
+  margin-top : 2vh;
+}
+
+#selectRandom {
+  border-radius: 3px;
+  background-color: #2F3E46;
+  margin-top: 2vh;
+  min-height: 10vh;
+  max-height: 10vh;
+  flex-grow:1;
+  margin-left: 1vh;
+  color:#CAD2C5;
+  text-align: center;
+}
+
+/* RESULT DISPLAY */
+.resultDisplay {
+  background-color: #52796F;
+  color:#CAD2C5;
+  margin-top: 2vh;
+  border-radius:4px;
+  min-height: 33vh;
+  max-height: 33vh;
+  display: flex;
+}
+
+#results {
+  border-radius: 3px;
+  min-height: 27vh;
+  max-height: 27vh;
+  background-color: #84A98C;
+  margin-top: 3vh;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+.result {
+  background-color: #354F52;
+  color: #CAD2C5;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 1vh;
+}
