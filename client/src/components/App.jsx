@@ -9,7 +9,7 @@ const App = () => {
   if(user){
     return (
         <div className='baseBackground'>
-          <LoginHome />
+          <LoginHome user={user} setUser={setUser}/>
         </div>
     )
   }

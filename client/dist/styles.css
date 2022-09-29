@@ -60,6 +60,34 @@ button.header {
   border-radius: 4px;
 }
 
+#menuButton {
+  margin-left: 5px;
+}
+
+#menuButton:hover {
+  color:#CAD2C5;
+}
+
+#menu {
+  position: absolute;
+  top:3%;
+  left:93%;
+  text-align: center;
+  background-color: #2F3E46;
+  color:#CAD2C5;
+  border-radius: 3px;
+}
+
+.menuItem {
+  border:#354F52 1px solid;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+.menuItem:hover{
+  background-color: #354F52;
+}
+
 /* MAIN BODY */
 .mainContainer {
   display: grid;
@@ -302,7 +330,79 @@ button.header {
   margin-top: 2vh;
 }
 
-/* LOGIN MODAL */
+#switchGroupsModal {
+  background-color: #2F3E46;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.switchGroupsItem {
+  background-color: #52796F;
+  color: #CAD2C5;
+  border-radius: 3px;
+  padding:2px;
+  margin: 3px;
+}
+
+.switchGroupsItem:hover{
+  background-color: #354F52;
+}
+
+#switchGroupsTitle {
+  font-size: large;
+  padding:2px;
+  margin-top: 5px;
+}
+
+#manageGroupsModal {
+  background-color: #2F3E46;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#manageAccountModal {
+  background-color: #2F3E46;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.manageAccountItem {
+  background-color: #52796F;
+  color: #CAD2C5;
+  border-radius: 3px;
+  padding:2px;
+  margin: 3px;
+}
+
+#manageAccountTitle {
+  font-size: large;
+  padding:2px;
+  margin-top: 5px;
+}
+
+.manageAccountItem:hover{
+  background-color: #354F52;
+}
+
+/* LOGIN MODAL ANIMATION*/
 
 .loginFail {
   animation: shake 0.5s;

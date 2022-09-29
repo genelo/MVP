@@ -12,6 +12,8 @@ const SignUp = ({setUser}) => {
     userInfo.email = email.value;
     userInfo.username = username.value;
     userInfo.password = password.value;
+    userInfo.groups = [];
+    userInfo.results = [];
 
     axios.post('http://localhost:3000/register', userInfo, {headers : {"content-type": "application/json"}})
     .then((response) => {

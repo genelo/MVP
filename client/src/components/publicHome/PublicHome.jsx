@@ -14,7 +14,6 @@ const PublicHome = ({setUser}) => {
 const [participants, setParticipants] = useState([]);
 const [results, setResults] = useState([]);
 const closeModal = () => {
-  console.log('set')
   document.getElementById('loginModal').setAttribute('hidden','');
   document.getElementById('signUpModal').setAttribute('hidden','');
 }
@@ -23,6 +22,7 @@ const login =(e) => {
   //open login modal
   e.stopPropagation();
   document.getElementById('loginModal').removeAttribute('hidden');
+  document.getElementById('loginUsername').focus();
 };
 
 const signUp = (e) => {
