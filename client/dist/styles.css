@@ -267,3 +267,58 @@ button.header {
   padding: 10px;
   margin-top: 1vh;
 }
+
+/* MODALS */
+
+#loginModal {
+  background-color: #2F3E46;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#loginWrapper {
+  margin-top: 2vh;
+}
+
+#signUpModal {
+  background-color: #2F3E46;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#signUpWrapper {
+  margin-top: 2vh;
+}
+
+/* LOGIN MODAL */
+
+.loginFail {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  10% { transform: translate(-50%, -50%) rotate(-1deg); }
+  20% { transform: translate(-50%, -50%) rotate(1deg); }
+  30% { transform: translate(-50%, -50%) rotate(0deg); }
+  40% { transform: translate(-50%, -50%) rotate(1deg); }
+  50% { transform: translate(-50%, -50%) rotate(-1deg); }
+  60% { transform: translate(-50%, -50%)rotate(0deg); }
+  70% { transform: translate(-50%, -50%) rotate(-1deg); }
+  80% { transform: translate(-50%, -50%) rotate(1deg); }
+  90% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(-1deg); }
+}
